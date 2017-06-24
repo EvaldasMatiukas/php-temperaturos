@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Namų darbas JS</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style>
+			table {
+				border-spacing: 2px;
+				border-collapse: separate;
+			}
+			td {
+				height: 200px;
+				width: 200px;
+				text-align: center;
+				background-color: gray;
+				font-size: 35px;
+				color: white;
+			}
+			button {
+				padding: 20px;
+			}
+		</style>
+		<script>
+			var cell = 0;
+
+			function random_cell() {
+
+				clear();
+
+				cell = Math.floor(Math.random() * 9);
+
+				document.getElementById(cell).style.backgroundColor = random_color();
+				
+				var numeris = document.getElementById("numeris")
+				
+				numeris.innerHTML  = "<h1>" + cell + </h1>;
+				numeris.style.backgroundColor = random_color();
+				
+				var sarasas = document.getElementById("sarasas");
+				
+				skaiciu_eile.push(cell);
+				sarasas.innerHTML = skaiciu_eile;
+
+			}
+
+				function clear(){
+					for(a=0; a<=9; a++){
+						document.getElementById(a).style.backgroundColor = "gray";
+					
+				
+			}
+		}
+
+			function next_cell() {
+				if (cell >=9) {
+					cell = 0;
+				} else {
+					cell = cell;
+				}
+				}
+
+				for (a=0; a<=9; a++) {
+					document.getElementById(a.toString()).style.backgroundColor = "gray";
+				
+					document.getElementById(cell.toString()).style.backgroundColor = "red";
+				}
+
+
+
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>JavaScript namų darbas</h1>
+			<p class="lead">Paspaudus vieną iš mygtukų, pasikeičia langelio stilius.</p>
+			<div id="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<table>
+						<tr>
+							<td id="0">0</td>
+							<td id="1">1</td>
+							<td id="2">2</td>
+							<td id="3">3</td>
+							<td id="4">4</td>
+							<td id="5">5</td>
+							<td id="6">6</td>
+							<td id="7">7</td>
+							<td id="8">8</td>
+							<td id="9">9</td>
+						</tr>
+					</table>
+					
+					unordered list
+
+					<center>
+						<button type="button" onclick="random_cell()">Pakeisti atsitiktinį langelį</button>
+					</center>
+				
+					<table>
+						<tr>
+							<td div id="numeris">
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-3"></div>
+				<div id="sarasas">
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 
+//padaryti, bootstrapan viska ivilkti, kad iskristu tik 6 skaiciai ir kai tik jie iskrenta pasiraso, kad zaidimas baigiasi. dar vienas naujas mygtukas, kad naujas zaidimas.
+Apacioje bilietas laimingas. kuris turetu laimeti. Jei laimi, turi atsispindeti laimejimo zinuteje.

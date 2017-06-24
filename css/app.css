@@ -1,0 +1,41 @@
+		
+		@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+		
+		body
+		{
+			text-align:center;
+
+			font-family: 'Roboto', sans-serif;
+		}		
+
+		h1
+		{
+		color:orange;
+		font-size:40px;
+		}
+
+		p
+		{
+		color:red;
+
+		}
+
+th
+{
+	background-color: rgb(255, 153, 153)
+}
+
+td
+{
+	background-color: rgb(255,255,0)
+}
+
+
+.zalia {
+	background-color: rgb(128, 255, 170);
+}
+
+.ruda {
+
+	background-color: rgb(255, 179, 128);
+}

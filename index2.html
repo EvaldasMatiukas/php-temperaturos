@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Evaldas</title>
+		
+			<link rel="stylesheet" href="css/app.css">
+			<link rel="stylesheet" href="css/font-awesome.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<script src="script.js"></script>
+
+	</head>
+	
+	<body>
+	
+		<div class="container">
+
+			<div class="row">
+			<div id="preke" style="padding: 25px; background-color: gray;color: white">
+			tuscia
+			</div>
+			
+			<button onclick="parodyk_preke()">Saldumynas</button>
+
+			<script>
+
+		function parodyk_preke() {
+			var prekes_pavadinimas = "saldainis";
+			var prekes_kaina = 1;
+			var sudetis = ["cukrus", "sokoladas", "riesutai"];
+			
+			var visa_kaina = 5 * prekes_kaina;
+
+			document.getElementById('preke').innerHTML = prekes_pavadinimas;
+			}
+			</script>
+			</div>
+
+
+			<div class="row">
+			<div id="klausimas">
+				<h1>Kiek bus du plius du?</h1>
+			</div>
+
+			<button onclick="teisingai()">Keturi</button>
+			<button onclick="neteisingai()">Vienas</button>
+
+
+
+		<div class="row">
+	
+			<div class="col-md-6 zalia">
+			<h1 style="color:green; font-size:40PX;">mano pirmas puslapis</h1>
+			</div>
+			
+			<div class="col-md-6 ruda">
+			<p>Mano vardas Evaldas</p>
+			<p>Man patinka keliauti, programuoti</p>
+			<a title="Link to my FB profile" 
+			href="https://www.facebook.com/evaldas.matiukas">FB profilis<a/>
+			</div>
+
+		<p title="Lorem ipsum standart"><!-- start slipsum code -->
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est 
+		laborum.<p/>
+		
+		<div class="row">
+	
+			<div class="col-md-12 zalia">
+		<br/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p/>
+		</div>
+
+		<br/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p/>
+		<br/>
+
+		<!-- end slipsum code --></p>
+
+			<br>
+		<img width="500" 
+		src="images/bald-eagle-wallpapers-flight.jpg">
+			<br/>
+		
+		<video width="500" height="500" controls autoplay controls> 
+		<source
+		src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+		</video>
+
+		<i class="fa fa-handshake-o" aria-hidden="true"></i>
+
+		<table style="width:100%">
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Jill</td>
+				<td>Smith</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>Eve</td>
+				<td>Jackson</td>
+				<td>94</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
