@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Baseinas ir autocisternos</title>
+		<script>
+			var cell = 0;
+
+			function $Baseino_gylis() {
+				cell = Math.floor(Math.random() * 9) + 1;
+
+				for (a=1; a<=9; a++) 
+
+			function next_cell() {
+				if (cell >=9) {
+					cell = 1;
+				} else {
+					cell = ++cell;
+				}
+				
+				for (a=1; a<=9; a++) 
+
+
+		</script>
+</head>
+<body>
+	
+	<table border="1">
+
+	<tr>
+		<th>Baseino gylis (m.)</th>
+		<th>Turis (kub. m.)</th>
+		<th>Autocisternu kiekis (vnt.)</th>
+	</tr>
+
+	<tr>
+		<td>$Baseino_gylis</td>
+		<td>$Turis</td>
+		<td>$Autocisternu_kiekis</td>
+	</tr>
+
+
+	<?php
+	for ($Baseino_gylis=1; $Baseino_gylis < 31 ; $Baseino_gylis++) {
+	echo get_area(1, 20, 5)
+	}
+
+	function get_area ($Baseino_gylis, $ilgis, $plotis){
+	$plotas = ($ilgis * $gylis)*2 + ($plotis * $gylis)*2 + ($ilgis * $plotis);
+
+	return $plotas;
+	}
+	?>
+
+
+</html>
