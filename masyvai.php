@@ -42,5 +42,58 @@
 	}
 ?>
 
+
+<?php
+$sudetys = [
+	"Blynai" => ["Miltai" => 250, "Pienas" => 100, "Druska" => 2],
+	"Arbata" => ["Vanduo" => 100, "Arbata" => 100];
+]
+
+	//echo $sudetys["Blynai"]["Miltai"];
+	foreach ($sudetys ["Blynai"] as $kiekis) {
+		echo $kiekis . "<br />";
+	}
+
+	foreach ($sudetys["Blynai"] as $produktas => $kiekis) {
+		echo "produktas: " . $produktas . ", " . $kiekis . "<br />";
+	}
+
+?>
+
+
+	$drinks = ["Water", "Tea", "Milk", "Coffee", "Beer", "Juice"];   /
+	
+	$some_drinks = array_slice($drinks, 0, 2); //masyvas supjausto masyva
+
+	$merged = array_merge($masyvas1, $masyvas2);
+
+
+	$exploded = explode(" ", $tekstas);			//grazina array
+
+	$imploded = implode(" ", $tekstas);			//grazina string
+
+
+	sort($masyvas); // surusiuoja paga dydi ir pakeicia raktus
+	asort($masyvas); // surusiuoja bet nepakeicia raktu
+
+	shuffle($masyvas);
+
+
+## Uzduotis
+suvesti i masyva troskinio sudeti:
+
+Jautiena, 250 g.
+Pupeles, 500 g.
+Vanduo, 500 g.
+Pomidorai, 300 g.
+Paprika, 100g.
+
+1. parasyti funkcija, kuri atspausdintu visus elementus lenteleje (print kontent/sudetis). produktas ir svoris
+2. (print inside?) echo printf parasyti funkcija, kuri atspausdintu "Jautienos receptui mums reikes XXX gramu ZZZ, taip pat, XXX gramu ZZZ..."
+3. prasayti funkcija, kuri suskaiciuotu kiek svers visi produktai
+4. parasyti funcija, kuri patikrintu ar vandens ne maziau nei pupeliu
+*/
+
+
 </body>
 </html>
